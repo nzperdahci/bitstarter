@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
-buf = new Buffer(24);
+var buf = new Buffer(24);
 buf = fs.readFileSynch('index.html');
 
 app.get('/', function(request, response) {
